@@ -64,7 +64,7 @@ def get_profile(token):
   logging.error(f"Error fetching profile: {e}")
 def main():
  display_header()
- method = input('Select input method (0 for seed phrase, 1 for private key): ')
+ method = input('raveshe vasl shodan be wallet (0 VASE seed phrase, 1 VASE private key): ')
  if method == '0':
   with open('accounts.txt', 'r') as file:
    seed_phrases_or_keys = [line.strip() for line in file]
@@ -78,7 +78,7 @@ def main():
  else:
   raise ValueError('Invalid input method selected')
  default_address_count = 100
- address_count_input = input(f'How many random addresses do you want to generate? (default is {default_address_count}): ')
+ address_count_input = input(f'chandta tarakonesh bezane INAM bezan enter ? (pishfarz {default_address_count}): ')
  address_count = int(address_count_input) if address_count_input else default_address_count
  if address_count <= 0:
   raise ValueError('Invalid number of addresses specified')
@@ -92,13 +92,13 @@ def main():
   rent_exemption_amount = 0.001
  amount_to_send = 0
  while amount_to_send < rent_exemption_amount:
-  amount_input = input('Enter the amount of SOL to send (default is 0.001 SOL): ')
+  amount_input = input('bezan enter ya edit kon (Pishfarz  0.001 SOL): ')
   amount_to_send = float(amount_input) if amount_input else 0.001
   if amount_to_send < rent_exemption_amount:
    logging.error(f'Invalid amount specified. The amount must be at least {rent_exemption_amount} SOL to avoid rent issues.')
    logging.info(f'Suggested amount to send: {max(0.001, rent_exemption_amount)} SOL')
  default_delay = 1000
- delay_input = input(f'Enter the delay between transactions in milliseconds (default is {default_delay}ms): ')
+ delay_input = input(f'bezan enter ya fasele beyne tarakonesh haro bede  (pishfarz {default_delay}ms): ')
  delay_between_tx = int(delay_input) if delay_input else default_delay
  for index, seed_or_key in enumerate(seed_phrases_or_keys):
   if method == '0':
