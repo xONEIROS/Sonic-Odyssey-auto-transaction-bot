@@ -42,6 +42,7 @@ python3 main.py
 > -------------------------------
 
 # اگر میخواهید با استفاده از سایت [replit](https://replit.com/) این مراحل رو انجام بدید کافیه این ویدئو آموزشی رو ببینید
+## قبل از استفاده از رپلیت [این توییت رو بخونید](https://x.com/0xOneiros/status/1818584801554616330)
 
 https://github.com/user-attachments/assets/f65e06bf-2a79-445a-a8ec-70cab31a231a
 
